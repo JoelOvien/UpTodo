@@ -11,7 +11,7 @@ import SwiftData
 
 struct SplashScreenView: View {
 	@Environment(\.modelContext) private var modelContext
-
+	
 	var body: some View {
 		NavigationStack{
 			ZStack{
@@ -19,7 +19,7 @@ struct SplashScreenView: View {
 				
 				VStack{
 					Image("AppLogo")
-					DelayedNavigationLink(delay: .seconds(5)) {
+					DelayedNavigationLink(delay: .seconds(3)) {
 						OnboardingView(showOnboarding: .constant(true))
 					}
 				}

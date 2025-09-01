@@ -15,6 +15,7 @@ struct UpTodoApp: App {
     var body: some Scene {
         WindowGroup {
 			SplashScreenView()
+				.preferredColorScheme(.dark)
         }
     }
 }
